@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pide tu Cita - Inkamay Salud</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+        }
+
+        /* Estilo del Navbar */
+        #navbar {
+            background-color: #e0e0e0;
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        #navbar img {
+            width: 100px;
+            margin-left: 20px;
+        }
+
+        #navbar a {
+            margin: 0 20px;
+            font-size: 18px;
+            text-decoration: none;
+            color: black;
+        }
+
+        #navbar a:hover {
+            font-weight: bold;
+        }
+
+        /* Contenedor de la página */
+        .appointment-container {
+            margin: 40px auto;
+            text-align: center;
+            width: 90%;
+        }
+
+        /* Estilo del título */
+        .appointment-container h2 {
+            font-size: 36px;
+            font-weight: bold;
+        }
+
+        .appointment-container p {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+
+        /* Contenedor del formulario */
+        .form-container {
+            display: flex;
+            justify-content: space-between;
+            margin: 0 auto;
+            max-width: 600px;
+        }
+
+        .form-group {
+            display: flex;
+            flex-direction: column;
+            width: 48%;
+        }
+
+        label {
+            font-size: 16px;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        input, select {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        /* Estilo del botón */
+        .submit-btn {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 12px 30px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-top: 20px;
+        }
+
+        .submit-btn:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<div id="navbar">
+    <img src="img2.jpeg" alt="Logo Inkamay Salud">
+    <div>
+        <a href="#">Citas</a>
+        <a href="#">Médicos</a>
+        <a href="#">Sobre INKAMAY</a>
+    </div>
+</div>
+
+<!-- Contenido principal de la página -->
+<div class="appointment-container">
+    <h2>¡Pide tu cita!</h2>
+    <p>Mira los doctores disponibles y con sus especialidades</p>
+
+    <!-- Formulario de cita -->
+    <div class="form-container">
+        <!-- Campo de "Cita para" -->
+        <div class="form-group">
+            <label for="cita-para">CITA PARA:</label>
+            <input type="text" id="cita-para" placeholder="Usuario">
+        </div>
+
+        <!-- Campo de "Especialidad" -->
+        <div class="form-group">
+            <label for="especialidad">ESPECIALIDAD:</label>
+            <select id="especialidad">
+                <option value="">Selecciona</option>
+                <option value="cardiologia">Cardiología</option>
+                <option value="dermatologia">Dermatología</option>
+                <option value="pediatria">Pediatría</option>
+                <option value="ginecologia">Ginecología</option>
+                <!-- Agregar más especialidades según sea necesario -->
+            </select>
+        </div>
+    </div>
+
+    <!-- Botón siguiente -->
+    <button class="submit-btn">Siguiente</button>
+</div>
+
+</body>
+</html>
