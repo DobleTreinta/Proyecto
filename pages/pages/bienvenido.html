@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Bienvenida - Inkamay Salud</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+        }
+
+        /* Estilo del Navbar */
+        #navbar {
+            background-color: #e0e0e0;
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        #navbar img {
+            width: 100px;
+            margin-left: 20px;
+        }
+
+        #navbar a {
+            margin: 0 20px;
+            font-size: 18px;
+            text-decoration: none;
+            color: black;
+        }
+
+        #navbar a:hover {
+            font-weight: bold;
+        }
+
+        /* Contenedor de la página de bienvenida */
+        .welcome-container {
+            text-align: center;
+            margin: 40px auto;
+            width: 90%;
+        }
+
+        /* Estilo de las tarjetas de opciones */
+        .card-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            justify-items: center;
+            margin-top: 20px;
+        }
+
+        .card {
+            background-color: white;
+            width: 200px;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .card img {
+            width: 50px;
+            margin-bottom: 10px;
+        }
+
+        .card h3 {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+        .card button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100%;
+        }
+
+        .card button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<div id="navbar">
+    <img src="img2.jpeg" alt="Logo Inkamay Salud">
+    <div>
+        <a href="#">Citas</a>
+        <a href="#">Médicos</a>
+        <a href="#">Sobre INKAMAY</a>
+    </div>
+</div>
+
+<!-- Contenido de la página de bienvenida -->
+<div class="welcome-container">
+    <h2>Bienvenida</h2>
+
+    <div class="card-container">
+        <!-- Pide tu cita -->
+        <div class="card">
+            <img src="cita.png" alt="Pide tu cita">
+            <h3>PIDE TU CITA</h3>
+            <button>Ver</button>
+        </div>
+
+        <!-- Busca tu médico -->
+        <div class="card">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Medical_search.svg/2048px-Medical_search.svg.png" alt="Busca tu médico">
+            <h3>BUSCA TU MÉDICO</h3>
+            <button>Ver</button>
+        </div>
+
+        <!-- Mis citas -->
+        <div class="card">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Medical_history.svg/2048px-Medical_history.svg.png" alt="Mis citas">
+            <h3>MIS CITAS</h3>
+            <button>Ver</button>
+        </div>
+
+        <!-- Mi cuenta -->
+        <div class="card">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/User_icon_2.svg/2048px-User_icon_2.svg.png" alt="Mi cuenta">
+            <h3>MI CUENTA</h3>
+            <button>Ver</button>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

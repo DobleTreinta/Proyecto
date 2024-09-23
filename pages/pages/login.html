@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Inkamay Salud</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+        }
+
+        /* Estilo del Navbar */
+        #navbar {
+            background-color: #e0e0e0;
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        #navbar img {
+            width: 100px;
+            margin-left: 20px;
+        }
+
+        #navbar a {
+            margin: 0 20px;
+            font-size: 18px;
+            text-decoration: none;
+            color: black;
+        }
+
+        #navbar a:hover {
+            font-weight: bold;
+        }
+
+        /* Estilo del formulario */
+        .login-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 80vh;
+        }
+
+        .login-form {
+            background-color: white;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 300px;
+        }
+
+        .login-form h2 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .login-form label {
+            display: block;
+            font-size: 14px;
+            color: #333;
+            margin-bottom: 5px;
+        }
+
+        .login-form input[type="text"],
+        .login-form input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        .login-form .remember-me {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .login-form .remember-me input {
+            margin-right: 10px;
+        }
+
+        .login-form button {
+            width: 100%;
+            padding: 10px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .login-form button:hover {
+            background-color: #0056b3;
+        }
+
+        .login-form a {
+            display: block;
+            text-align: center;
+            color: #007bff;
+            text-decoration: none;
+            margin-top: 10px;
+        }
+
+        .login-form a:hover {
+            text-decoration: underline;
+        }
+
+        .login-form .secondary-links {
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .login-form .secondary-links a {
+            color: #007bff;
+            font-size: 14px;
+        }
+
+    </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<div id="navbar">
+    <img src="img2.jpeg" alt="Logo Inkamay Salud">
+    <div>
+        <a href="#">Citas</a>
+        <a href="#">Médicos</a>
+        <a href="#">Sobre INKAMAY</a>
+    </div>
+</div>
+
+<!-- Contenido del Login -->
+<div class="login-container">
+    <div class="login-form">
+        <h2>BIENVENIDOS</h2>
+        <form>
+            <label for="dni">Ingrese su DNI</label>
+            <input type="text" id="dni" name="dni" placeholder="Número de Documento">
+
+            <label for="password">Recuerda que tu contraseña es solo números</label>
+            <input type="password" id="password" name="password" placeholder="Contraseña">
+
+            <div class="remember-me">
+                <input type="checkbox" id="remember" name="remember">
+                <label for="remember">Recordarme</label>
+            </div>
+
+            
+            <button type="button" onclick="location.href='bienvenido.html'">Iniciar Sesión</button>
+            <a href="#">Olvidé mi contraseña</a>
+
+            <div class="secondary-links">
+                <p>¿No tienes una cuenta? <a href="registro.html">Regístrate</a></p>
+            </div>
+        </form>
+    </div>
+</div>
+
+</body>
+</html>
