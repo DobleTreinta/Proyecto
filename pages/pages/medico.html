@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Busca tu médico - Inkamay Salud</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+        }
+
+        /* Estilo del Navbar */
+        #navbar {
+            background-color: #e0e0e0;
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        #navbar img {
+            width: 100px;
+            margin-left: 20px;
+        }
+
+        #navbar a {
+            margin: 0 20px;
+            font-size: 18px;
+            text-decoration: none;
+            color: black;
+        }
+
+        #navbar a:hover {
+            font-weight: bold;
+        }
+
+        /* Contenedor principal */
+        .main-container {
+            margin: 40px auto;
+            text-align: center;
+            width: 80%;
+        }
+
+        .main-container h2 {
+            font-size: 32px;
+            font-weight: bold;
+            margin-bottom: 30px;
+        }
+
+        .main-container p {
+            font-size: 18px;
+            color: #555;
+            margin-bottom: 40px;
+        }
+
+        /* Formularios de búsqueda */
+        .search-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .search-container input, .search-container select {
+            padding: 10px;
+            margin: 0 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+            width: 250px;
+        }
+
+        /* Botón de buscar */
+        .search-button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 30px;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .search-button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<div id="navbar">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Clinica.jpg/320px-Clinica.jpg" alt="Logo Inkamay Salud">
+    <div>
+        <a href="#">Citas</a>
+        <a href="#">Médicos</a>
+        <a href="#">Sobre INKAMAY</a>
+    </div>
+</div>
+
+<!-- Contenido principal -->
+<div class="main-container">
+    <h2>¡Busca tu médico favorito!</h2>
+    <p>Encuentra a tu doctor de confianza</p>
+
+    <!-- Formularios de búsqueda -->
+    <div class="search-container">
+        <input type="text" placeholder="Nombre">
+        <select>
+            <option value="" disabled selected>Especialidad</option>
+            <option value="cardiologia">Cardiología</option>
+            <option value="dermatologia">Dermatología</option>
+            <option value="pediatria">Pediatría</option>
+            <!-- Puedes añadir más especialidades aquí -->
+        </select>
+    </div>
+
+    <!-- Botón de buscar -->
+    <button class="search-button">Buscar</button>
+
+</div>
+
+</body>
+</html>
