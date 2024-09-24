@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Historial de Citas - Inkamay Salud</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+        }
+
+        /* Estilo del Navbar */
+        #navbar {
+            background-color: #e0e0e0;
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        #navbar img {
+            width: 100px;
+            margin-left: 20px;
+        }
+
+        #navbar a {
+            margin: 0 20px;
+            font-size: 18px;
+            text-decoration: none;
+            color: black;
+        }
+
+        #navbar a:hover {
+            font-weight: bold;
+        }
+
+        /* Contenedor principal */
+        .main-container {
+            margin: 40px auto;
+            text-align: center;
+            width: 80%;
+        }
+
+        .main-container h2 {
+            font-size: 32px;
+            font-weight: bold;
+            margin-bottom: 30px;
+        }
+
+        /* Contenedor de citas */
+        .appointment {
+            background-color: #ffffff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 30px;
+            margin-bottom: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .appointment img {
+            width: 40px;
+        }
+
+        .appointment-details {
+            flex: 1;
+            margin-left: 20px;
+            text-align: left;
+        }
+
+        .appointment-details h3 {
+            margin: 0;
+            font-size: 20px;
+            font-weight: normal;
+        }
+
+        .appointment-details p {
+            margin: 5px 0;
+            font-size: 16px;
+            color: #555;
+        }
+
+        .view-button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .view-button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<div id="navbar">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Clinica.jpg/320px-Clinica.jpg" alt="Logo Inkamay Salud">
+    <div>
+        <a href="#">Citas</a>
+        <a href="#">Médicos</a>
+        <a href="#">Sobre INKAMAY</a>
+    </div>
+</div>
+
+<!-- Contenido principal -->
+<div class="main-container">
+    <h2>MI HISTORIAL DE CITAS</h2>
+
+    <!-- Cita 1 -->
+    <div class="appointment">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Calendar_font_awesome.svg/1200px-Calendar_font_awesome.svg.png" alt="Icono de cita">
+        <div class="appointment-details">
+            <h3>Cita 1</h3>
+            <p>Detalles: ......</p>
+        </div>
+        <button class="view-button">Ver</button>
+    </div>
+
+    <!-- Cita 2 -->
+    <div class="appointment">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Calendar_font_awesome.svg/1200px-Calendar_font_awesome.svg.png" alt="Icono de cita">
+        <div class="appointment-details">
+            <h3>Cita 2</h3>
+            <p>Detalles: ......</p>
+        </div>
+        <button class="view-button">Ver</button>
+    </div>
+
+</div>
+
+</body>
+</html>
