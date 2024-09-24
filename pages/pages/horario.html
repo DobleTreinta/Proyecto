@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horario de Usuario - Inkamay Salud</title>
+    
+    <!-- Incluir FullCalendar CSS -->
+    <script src="
+    https://cdn.jsdelivr.net/npm/fullcalendar@6.1.15/index.global.min.js
+"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+        }
+
+        /* Estilo del Navbar */
+        #navbar {
+            background-color: #e0e0e0;
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        #navbar img {
+            width: 100px;
+            margin-left: 20px;
+        }
+
+        #navbar a {
+            margin: 0 20px;
+            font-size: 18px;
+            text-decoration: none;
+            color: black;
+        }
+
+        #navbar a:hover {
+            font-weight: bold;
+        }
+
+        /* Contenedor principal */
+        .main-container {
+            margin: 40px auto;
+            width: 80%;
+        }
+
+        /* Contenedor de perfil */
+        .profile-container {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .profile-container img {
+            width: 100px;
+            height: 100px;
+            background-color: #ccc;
+            border-radius: 50%;
+            margin-right: 20px;
+        }
+
+        .profile-container h3 {
+            font-size: 24px;
+        }
+
+        /* Estilo del contenedor del calendario */
+        #calendar {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+    </style>
+    
+    <!-- Incluir FullCalendar JS -->
+    <script src='https://cdn.jsdelivr.net/npm/fullcalendar@6.1.8/main.min.js'></script>
+</head>
+<body>
+
+<!-- Navbar -->
+<div id="navbar">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Clinica.jpg/320px-Clinica.jpg" alt="Logo Inkamay Salud">
+    <div>
+        <a href="#">Citas</a>
+        <a href="#">Médicos</a>
+        <a href="#">Sobre INKAMAY</a>
+    </div>
+</div>
+
+<!-- Contenido principal -->
+<div class="main-container">
+    <!-- Perfil de usuario -->
+    <div class="profile-container">
+        <img src="https://via.placeholder.com/100" alt="Foto de perfil">
+        <h3>Usuario</h3>
+    </div>
+
+    <!-- Calendario -->
+    <div id='calendar'></div>
+</div>
+
+<!-- Script para inicializar el calendario -->
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        var calendarEl = document.getElementById('calendar');
+
+        var calendar = new FullCalendar.Calendar(calendarEl, {
+            initialView: 'timeGridWeek',  // Vista por semana
+            headerToolbar: {
+                left: 'prev,next today',
+                center: 'title',
+                right: 'dayGridMonth,timeGridWeek,timeGridDay'
+            },
+            events: [
+                {
+                    title: 'Cita 1',
+                    start: '2024-09-22T07:15:00',
+                    end: '2024-09-22T10:15:00'
+                },
+                {
+                    title: 'Cita 2',
+                    start: '2024-09-24T11:30:00',
+                    end: '2024-09-24T14:15:00'
+                },
+                {
+                    title: 'Cita 3',
+                    start: '2024-09-25T08:45:00',
+                    end: '2024-09-25T13:15:00'
+                },
+                {
+                    title: 'Cita 4',
+                    start: '2024-09-27T10:30:00',
+                    end: '2024-09-27T13:15:00'
+                },
+                {
+                    title: 'Cita 5',
+                    start: '2024-09-28T07:30:00',
+                    end: '2024-09-28T10:15:00'
+                }
+            ]
+        });
+
+        calendar.render();
+    });
+</script>
+
+</body>
+</html>
